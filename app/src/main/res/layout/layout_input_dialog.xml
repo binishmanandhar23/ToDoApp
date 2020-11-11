@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:elevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextCheckListTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Checklist Title"
+        android:textColorHint="@color/DarkGray"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/DarkGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonDoneInput"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:elevation="4dp"
+        android:src="@drawable/ic_check"
+        android:padding="20dp"
+        android:background="@drawable/curved_background"
+        android:backgroundTint="@color/Salmon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextCheckListTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        android:layout_margin="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonCloseInput"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:elevation="4dp"
+        android:src="@drawable/ic_cancel"
+        android:padding="20dp"
+        android:background="@drawable/curved_background"
+        android:backgroundTint="@color/PaleGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextCheckListTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        android:layout_margin="20dp"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
