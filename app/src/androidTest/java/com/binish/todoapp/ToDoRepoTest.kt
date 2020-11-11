@@ -18,10 +18,6 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class ToDoRepoTest {
-    @Rule
-    @JvmField
-    var instantTaskExecutorRule = InstantTaskExecutorRule()
-
     lateinit var realm: Realm
     lateinit var toDoViewModel: ToDoViewModel
 
